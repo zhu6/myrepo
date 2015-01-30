@@ -10,3 +10,4 @@ Questions for Lauren:
 [Zhoujian]
 7. How can we know about the format used for the students' essays?
 8. How are you going to measure the average length of the sentence in the students' essays?
+9. What is the expected maximum length of the essay so far?
