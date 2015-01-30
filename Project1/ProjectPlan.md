@@ -38,7 +38,8 @@ Process description as a set of activities; for each activity, provide the follo
 Describe the team and their roles (there may be more roles than there are team members)
 
 ####Team members' names: 
-- Mark Smith, Dom Roselli, Aaron Reed, Zhoujian Hu       
+- Mark Smith, Dom Roselli, Aaron Reed, Zhoujian Hu
+
 ####Roles: 
 - *project manager*: initialization of the project, coordination and tracking, pushing project to the remote depository on GitHub;
 -  *development lead*: lead and coordinate software development, assign engineering tasks, provide technical guidance to developers;
