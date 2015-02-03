@@ -1,13 +1,4 @@
 Questions for Lauren:
-[dom]
 1. Is there a minimum number of words that constitute a valid sentence? (Ex. Is this a sentence? "Yes.")
 2. Does a number count as a word? And if so, does it need to meet the minimum length requirement? (Ex. "There are 7 days in a week.")
-3. How would you handle something like "..." used in a sentence?  Should it be ignored or should it be counted as three sentences?
-[mark]
-4. Is it necessary to recognize a hyphenated word that wraps across 2 lines at a hard line break (i.e. Wednes-day where the 'day' portion is on a new line) as a single word or is it okay to interpret as 2 separate words?
-5. Is it safe to assume punctuation without any whitespace does NOT delimit words (i.e. '2,347' and '$1,000.00' are each counted as one word)?
-6. Is it okay to count a sequence of non alphanumeric characters, i.e. ??? or :-), as a word?
-[Zhoujian]
-7. How can we know about the format used for the students' essays?
-8. How are you going to measure the average length of the sentence in the students' essays?
-9. What is the expected maximum length of the essay so far?
+
