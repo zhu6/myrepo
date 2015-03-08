@@ -71,7 +71,7 @@ Describe the team and their roles (there may be more roles than there are team m
 | Aaron Reed  | | | X | | X | X |
 | Zhoujian Hu | | | | X | X | X ||
 
-| Case#        | cust           | Cool  |
+| Case#        | cust           | isGold  | mTotal |
 | ------------- |:-------------:| -----:|
 | col 3 is      | right-aligned | $1600 |
 | col 2 is      | centered      |   $12 |
