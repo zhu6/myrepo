@@ -71,8 +71,55 @@ Describe the team and their roles (there may be more roles than there are team m
 | Aaron Reed  | | | X | | X | X |
 | Zhoujian Hu | | | | X | X | X ||
 
+| Case#        | cust           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
+
+
 ![PReMS-UML-test](./Project1/testcase.csv) 
-**cust: customer; isGold: isGoldStatus; merTotal:merchandiseTotal; purAmt: purchaseAmount; purAmt-disc: the different between purchaseAmount and discount; ccVerif: creditcardverification; ccPaid: creditcardPaid; 
+
+**cust: customer; isGold: isGoldStatus; merTotal:merchandiseTotal; purAmt: purchaseAmount; purAmt-disc: the different between purchaseAmount and discount; ccVerif: creditcardverification; ccPaid: creditcardPaid;                                     
+
+
+|         Input                                                       |
+|case#  | cust   | isGold | mTotal | disc | pAmt | ccVerf | pAmt-disc |
+| ----- |:------:|:------:|:------:|:----:|:----:|:------:| ---------:|
+| 1     | em     | FALSE  | 0      | 0    | 100  | 1      | >0        |
+| 2     | em     | FALSE  | 0      | 0    | 10   | 1      | >0        |
+| 3     | em     | FALSE  | 0      | 0    | 100  | 0      | >0        |
+| 4     | em     | FALSE  | 0      | 0    | 10   | 0      | >0        |
+| 5     | notem  | FALSE  | <1000  | 0    | 10   | 0      | >0        |
+| 6     | notem  | FALSE  | <1000  | 0    | 10   | 1      | >0        |
+| 7     | notem  | FALSE  | <1000  | 0    | 100  | 0      | >0        |
+| 8     | notem  | FALSE  | <1000  | 0    | 100  | 1      | >0        |
+| 9     | notem  | FALSE  | <1000  | 100  | 10   | 0      | <0        |
+| 10    | notem  | FALSE  | <1000  | 100  | 10   | 1      | <0        |
+| 11    | notem  | FALSE  | <1000  | 20   | 30   | 0      | >0        |
+| 12    | notem  | FALSE  | <1000  | 20   | 30   | 1      | >0        |
+| 13    | notem  | FALSE  | <1000  | 20   | 120  | 0      | >0        |
+| 14    | notem  | FALSE  | <1000  | 20   | 120  | 1      | >0        |
+| 15    | notem  | FALSE  | >=1000 | 0    | 20   | 0      | >0        |
+| 16    | notem  | FALSE  | >=1000 | 0    | 20   | 1      | >0        |
+| 17    | notem  | FALSE  | >=1000 | 0    | 106  | 0      | >0        |
+| 18    | notem  | FALSE  | >=1000 | 0    | 106  | 1      | >0        |
+| 19    | notem  | FALSE  | >=1000 | 100  | 10   | 0      | <0        |
+| 20    | notem  | FALSE  | >=1000 | 100  | 10   | 1      | <0        |
+| 21    | notem  | FALSE  | >=1000 | 20   | 30   | 0      | >0        |
+| 22    | notem  | FALSE  | >=1000 | 20   | 30   | 1      | >0        |
+| 23    | notem  | FALSE  | >=1000 | 20   | 127  | 0      | >0        |
+| 24    | notem  | FALSE  | >=1000 | 20   | 127  | 1      | >0        |
+| 25    | notem  | TRUE   | >1000  | 0    | 20   | 0      | >0        |
+| 26    | notem  | TRUE   | >1000  | 0    | 20   | 1      | >0        |
+| 27    | notem  | TRUE   | >1000  | 0    | 106  | 0      | >0        |
+| 28    | notem  | TRUE   | >1000  | 0    | 100  | 1      | >0        |
+| 29    | notem  | TRUE   | >1000  | 100  | 10   | 0      | <0        |
+| 30    | notem  | TRUE   | >1000  | 100  | 10   | 1      | <0        |
+| 31    | notem  | TRUE   | >1000  | 20   | 30   | 0      | >0        |
+| 32    | notem  | TRUE   | >1000  | 20   | 30   | 1      | >0        |
+| 33    | notem  | TRUE   | >1000  | 20   | 127  | 0      | >0        |
+| 34    | notem  | TRUE   | >1000  | 20   | 120  | 1      | >0        |
 
 |         Input                                                       |
 |case#  | cust   | isGold | mTotal | disc | pAmt | ccVerf | pAmt-disc |
