@@ -63,12 +63,15 @@ Describe the team and their roles (there may be more roles than there are team m
 -  **Tester**: perform software testing to verify and validate software meets requirements specification and exit criteria
 
 ####Team role assignments for Project 1:
-| Team Member | Proj Mgr | Dev Lead | Doc Lead | QA Mgr | Developer | Tester |
+|            Input                                                         |       expected result                       |
+| Case # | cust | isGold | merTotal | disc | purAmt | ccverf | purAmt-disc | purAmt | merTotal | isGold | ccPaid | email |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
-| Mark Smith  | X | | | | X | X |
+|1  | empty | FALSE | 0 | 0 | 100 | 1 | >0 | 10 | 0.00 | 100.00| 100 | False | 100.00 | send|
 | Dom Roselli | | X | | | X | X |
 | Aaron Reed  | | | X | | X | X |
 | Zhoujian Hu | | | | X | X | X ||
+
+**cust: customer; isGold: isGoldStatus; merTotal:merchandiseTotal; purAmt: purchaseAmount; purAmt-disc: the different between purchaseAmount and discount; ccVerif: creditcardverification; ccPaid: creditcardPaid; 
 
 ##4 Estimates
 
