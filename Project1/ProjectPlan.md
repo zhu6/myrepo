@@ -73,7 +73,43 @@ Describe the team and their roles (there may be more roles than there are team m
 
 ![PReMS-UML-test](./Project1/testcase.csv) 
 **cust: customer; isGold: isGoldStatus; merTotal:merchandiseTotal; purAmt: purchaseAmount; purAmt-disc: the different between purchaseAmount and discount; ccVerif: creditcardverification; ccPaid: creditcardPaid; 
-
+|       |   Input   |        |        |      |      |        |           | expected  | result |         |          |        |         |         |
+|-------|:---------:|--------|--------|------|------|--------|-----------|-----------|--------|---------|----------|--------|---------|---------|
+| Case# | cust      | isGold | mTotal | disc | pAmt | ccVerf | pAmt-disc | reward    | disc   | pAmt    | mTotal   | isGold | ccPaid  | email   |
+| 1     | empty     | FALSE  | 0      | 0    | 100  | 1      | >0        | 10        | 0.00   | 100.00  | 100      | FALSE  | 100.00  | send    |
+| 2     | empty     | FALSE  | 0      | 0    | 10   | 1      | >0        | 0         | 0.00   | 10.00   | 10       | FALSE  | 10.00   | notsend |
+| 3     | empty     | FALSE  | 0      | 0    | 100  | 0      | >0        | 10        | 0.00   | 100.00  | 100      | FALSE  | 100.00  | send    |
+| 4     | empty     | FALSE  | 0      | 0    | 10   | 0      | >0        | 0         | 0.00   | 10.00   | 10       | FALSE  | 10.00   | notsend |
+| 5     | notempty  | FALSE  | <1000  | 0    | 10   | 0      | >0        | 0         | 0.00   | 10.00   | *+10     | FALSE  | 10.00   | notsend |
+| 6     | notempty  | FALSE  | <1000  | 0    | 10   | 1      | >0        | 0         | 0.00   | 10.00   | *+10     | FALSE  | 10.00   | notsend |
+| 7     | notempty  | FALSE  | <1000  | 0    | 100  | 0      | >0        | 10        | 0.00   | 100.00  | *+100    | FALSE  | 100.00  | send    |
+| 8     | notempty  | FALSE  | <1000  | 0    | 100  | 1      | >0        | 10        | 0.00   | 100.00  | *+100    | FALSE  | 100.00  | send    |
+| 9     | notempty  | FALSE  | <1000  | 100  | 10   | 0      | <0        | 0         | 90.00  | 10.00   | *+10     | FALSE  | 10.00   | notsend |
+| 10    | notempty  | FALSE  | <1000  | 100  | 10   | 1      | <0        | 0         | 90.00  | 10.00   | *+10     | FALSE  | 10.00   | notsend |
+| 11    | notempty  | FALSE  | <1000  | 20   | 30   | 0      | >0        | 0         | 0.00   | 10.00   | *+10     | FALSE  | 10.00   | notsend |
+| 12    | notempty  | FALSE  | <1000  | 20   | 30   | 1      | >0        | 0         | 0.00   | 10.00   | *+10     | FALSE  | 10.00   | notsend |
+| 13    | notempty  | FALSE  | <1000  | 20   | 120  | 0      | >0        | 10        | 0.00   | 100.00  | *+100    | FALSE  | 100.00  | send    |
+| 14    | notempty  | FALSE  | <1000  | 20   | 120  | 1      | >0        | 10        | 0.00   | 100.00  | *+100    | FALSE  | 100.00  | send    |
+| 15    | notempty  | FALSE  | >=1000 | 0    | 20   | 0      | >0        | 0         | 0.00   | 19.00   | *+19     | TRUE   | 19.00   | send    |
+| 16    | notempty  | FALSE  | >=1000 | 0    | 20   | 1      | >0        | 0         | 0.00   | 19.00   | *+19     | TRUE   | 19.00   | send    |
+| 17    | notempty  | FALSE  | >=1000 | 0    | 106  | 0      | >0        | 10        | 0.00   | 100.70  | *+100.7  | TRUE   | 100.70  | send    |
+| 18    | notempty  | FALSE  | >=1000 | 0    | 106  | 1      | >0        | 10        | 0.00   | 100.70  | *+100.7  | TRUE   | 100.70  | send    |
+| 19    | notempty  | FALSE  | >=1000 | 100  | 10   | 0      | <0        | 10        | 90.50  | 0.00    | *+9.50   | TRUE   | 9.50    | send    |
+| 20    | notempty  | FALSE  | >=1000 | 100  | 10   | 1      | <0        | 10        | 90.50  | 0.00    | *+9.50   | TRUE   | 9.50    | send    |
+| 21    | notempty  | FALSE  | >=1000 | 20   | 30   | 0      | >0        | 0         | 20.00  | 8.50    | *+8.50   | TRUE   | 8.50    | send    |
+| 22    | notempty  | FALSE  | >=1000 | 20   | 30   | 1      | >0        | 0         | 20.00  | 8.50    | *+8.50   | TRUE   | 8.50    | send    |
+| 23    | notempty  | FALSE  | >=1000 | 20   | 127  | 0      | >0        | 10        | 0.00   | 100.65  | *+100.65 | TRUE   | 100.65  | send    |
+| 24    | notempty  | FALSE  | >=1000 | 20   | 127  | 1      | >0        | 10        | 0.00   | 100.65  | *+100.65 | TRUE   | 100.65  | send    |
+| 25    | notempty  | TRUE   | >1000  | 0    | 20   | 0      | >0        | 0         | 0.00   | 19.00   | *+19.00  | TRUE   | 19.00   | notsend |
+| 26    | notempty  | TRUE   | >1000  | 0    | 20   | 1      | >0        | 0         | 0.00   | 19.00   | *+19.00  | TRUE   | 19.00   | notsend |
+| 27    | notempty  | TRUE   | >1000  | 0    | 106  | 0      | >0        | 10        | 0.00   | 100.70  | *+100.70 | TRUE   | 100.70  | send    |
+| 28    | notempty  | TRUE   | >1000  | 0    | 100  | 1      | >0        | 10        | 0.00   | 100.70  | *+100.70 | TRUE   | 100.70  | send    |
+| 29    | notempty  | TRUE   | >1000  | 100  | 10   | 0      | <0        | 0         | 90.50  | 0.00    | *+0      | TRUE   | 0.00    | notsend |
+| 30    | notempty  | TRUE   | >1000  | 100  | 10   | 1      | <0        | 0         | 90.50  | 0.00    | *+0      | TRUE   | 0.00    | notsend |
+| 31    | notempty  | TRUE   | >1000  | 20   | 30   | 0      | >0        | 0         | 0.00   | 8.50    | *+8.50   | TRUE   | 8.50    | notsend |
+| 32    | notempty  | TRUE   | >1000  | 20   | 30   | 1      | >0        | 0         | 0.00   | 8.50    | *+8.50   | TRUE   | 8.50    | notsend |
+| 33    | notempty  | TRUE   | >1000  | 20   | 127  | 0      | >0        | 10        | 0.00   | 100.65  | *+100.65 | TRUE   | 100.65  | send    |
+| 34    | notempty  | TRUE   | >1000  | 20   | 120  | 1      | >0        | 10        | 0.00   | 100.65  | *+100.65 | TRUE   | 100.65  | send    |
 ##4 Estimates
 
 Provide estimates for the following metrics:
