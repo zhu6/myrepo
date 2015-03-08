@@ -74,8 +74,8 @@ Describe the team and their roles (there may be more roles than there are team m
 ![PReMS-UML-test](./Project1/testcase.csv) 
 
 **cust: customer; isGold: isGoldStatus; merTotal:merchandiseTotal; purAmt: purchaseAmount; purAmt-disc: the different between purchaseAmount and discount; ccVerif: creditcardverification; ccPaid: creditcardPaid; 
-|       |  Input |        |        |      |      |        |           |
-|:-----:|:------:|--------|--------|------|------|--------|-----------|
+|         Input                                                       |
+|:-----:|:------:|:------:|:------:|:----:|:----:|:------:|:---------:|
 | Case# | cust   | isGold | mTotal | disc | pAmt | ccVerf | pAmt-disc |
 | 1     | em     | FALSE  | 0      | 0    | 100  | 1      | >0        |
 | 2     | em     | FALSE  | 0      | 0    | 10   | 1      | >0        |
@@ -110,7 +110,7 @@ Describe the team and their roles (there may be more roles than there are team m
 | 31    | notem  | TRUE   | >1000  | 20   | 30   | 0      | >0        |
 | 32    | notem  | TRUE   | >1000  | 20   | 30   | 1      | >0        |
 | 33    | notem  | TRUE   | >1000  | 20   | 127  | 0      | >0        |
-| 34    | notem  | TRUE   | >1000  | 20   | 120  | 1      | >0        |
+| 34    | notem  | TRUE   | >1000  | 20   | 120  | 1      | >0        ||
 
 ##4 Estimates
 
