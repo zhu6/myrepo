@@ -71,14 +71,22 @@ Describe the team and their roles (there may be more roles than there are team m
 | Aaron Reed  | | | X | | X | X |
 | Zhoujian Hu | | | | X | X | X ||
 
+| Case#        | cust           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
+
+
 ![PReMS-UML-test](./Project1/testcase.csv) 
 
 **cust: customer; isGold: isGoldStatus; merTotal:merchandiseTotal; purAmt: purchaseAmount; purAmt-disc: the different between purchaseAmount and discount; ccVerif: creditcardverification; ccPaid: creditcardPaid;                                     
 
+
 |         Input                                                       |
-| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
 | Case# | cust   | isGold | mTotal | disc | pAmt | ccVerf | pAmt-disc |
-| 1     | em     | FALSE  | 0      | 0    | 100  | 1      | >0        |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| 1 | em | FALSE | 0 | 0 | 100 | 1 | >0 |
 | 2     | em     | FALSE  | 0      | 0    | 10   | 1      | >0        |
 | 3     | em     | FALSE  | 0      | 0    | 100  | 0      | >0        |
 | 4     | em     | FALSE  | 0      | 0    | 10   | 0      | >0        |
