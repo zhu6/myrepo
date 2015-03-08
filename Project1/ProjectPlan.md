@@ -75,7 +75,7 @@ Describe the team and their roles (there may be more roles than there are team m
 
 **cust: customer; isGold: isGoldStatus; merTotal:merchandiseTotal; purAmt: purchaseAmount; purAmt-disc: the different between purchaseAmount and discount; ccVerif: creditcardverification; ccPaid: creditcardPaid; 
 |         Input                                                       |
-|:-----:|:------:|:------:|:------:|:----:|:----:|:------:|:---------:|
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
 | Case# | cust   | isGold | mTotal | disc | pAmt | ccVerf | pAmt-disc |
 | 1     | em     | FALSE  | 0      | 0    | 100  | 1      | >0        |
 | 2     | em     | FALSE  | 0      | 0    | 10   | 1      | >0        |
