@@ -71,6 +71,7 @@ Describe the team and their roles (there may be more roles than there are team m
 | Aaron Reed  | | | X | | X | X |
 | Zhoujian Hu | | | | X | X | X ||
 
+![PReMS-UML-test](./testcase.csv) 
 **cust: customer; isGold: isGoldStatus; merTotal:merchandiseTotal; purAmt: purchaseAmount; purAmt-disc: the different between purchaseAmount and discount; ccVerif: creditcardverification; ccPaid: creditcardPaid; 
 
 ##4 Estimates
