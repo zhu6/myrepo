@@ -119,7 +119,7 @@ Describe the team and their roles (there may be more roles than there are team m
 | 31    | notem  | TRUE   | >1000  | 20   | 30   | 0      | >0        |
 | 32    | notem  | TRUE   | >1000  | 20   | 30   | 1      | >0        |
 | 33    | notem  | TRUE   | >1000  | 20   | 127  | 0      | >0        |
-| 34    | notem  | TRUE   | >1000  | 20   | 120  | 1      | >0        ||
+| 34    | notem  | TRUE   | >1000  | 20   | 120  | 1      | >0        |
 
 ##4 Estimates
 
